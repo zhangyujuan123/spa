@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>密码框可见操作</title>
+    <link rel="stylesheet" href='./layout.css'>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+    <input type='button' value="添加密码框" id='add'>
+    <input type='button' value='获得密码' id='get'>
+    <script ype="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src='./main.js'></script>
+    <script>
+        $(function(){
+            var $add=$('#add'),
+               $get=$('#get');
+            $add.click(function(){
+                $pwdButton.show('body')
+            })
+            $get.click(function(){
+                $pwdButton.getPwd()
+            })
+        })
+    </script>
+</body>
+</html>

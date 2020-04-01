@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer button的测试页面</title>
+    <link rel="stylesheet" href='./timer-button.css'>
+</head>
+<body>
+    <details open><summary>添加按钮</summary>
+    <form class="form-create-button">    
+    <label>初始状态：</label> 
+    <input type="radio" name="status" value="true" class="select">
+    <label>启用</label>
+    <input type="radio" name="status" value="false" checked="checked" class="select"><label>禁用</label>
+    <br>
+    <label>禁用时长：</label> <input type="number" min="0" max="100" value="6" id='tim' autofocus>秒
+    <br>
+    <label>按钮文字：</label> <input type="text" maxlength="5" value="同意" id='btnTxt' required>
+    <br>
+    <div><label>事件代码：</label> <textarea cols="30" rows="10" id='txt'>alert('你终于同意了！');</textarea></div>
+    <input type='button' id='add' value='添加定时器按钮'>
+    </form>
+    </details>
+    <hr>
+    <div id='main'>
+    </div>
+    <script  src='https://apps.bdimg.com/libs/require.js/2.1.11/require.min.js' data-main='main.js'></script>
+</body>
+</html>

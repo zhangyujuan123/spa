@@ -25,7 +25,7 @@
     <hr>
     <div id='main'>
     </div>
-    <script ype="text/javascript" src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script ype="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src='./timer-button.js'></script>
     <script>
         $(function(){
@@ -42,7 +42,8 @@
                         }
                     }
                 }
-                $timerButton.show({
+                var tb=new TimerButton();
+                tb.show({
                     num:$('#tim').val(),
                     title:$('#btnTxt').val(),
                     onClick:function(){
@@ -50,7 +51,32 @@
                     },
                     enable:able
                 })
+                $timerButton.show({
+                    
+                })
             })
+            // var $btnAdd=$('#add');
+            // $btnAdd.click(function(){
+            //     var $select=$('.select'),able;
+            //     for(var i=0;i<$select.length;i++){
+            //         if($select[i].checked==true){
+            //             if($select[i].value=='true'){
+            //                 able=false;
+            //             }
+            //             else{
+            //                able=true;
+            //             }
+            //         }
+            //     }
+            //     $timerButton.show({
+            //         num:$('#tim').val(),
+            //         title:$('#btnTxt').val(),
+            //         onClick:function(){
+            //             $('#txt').html();
+            //         },
+            //         enable:able
+            //     })
+            // })
         });
     </script>
 </body>
