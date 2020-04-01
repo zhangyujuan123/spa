@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+    <link rel="stylesheet" href='./rectangle.css'>
+
+</head>
+<body>
+    <form class="main">
+        <label>宽度：</label><input type='number' id='width' required autofocus min='0' step='0.01'/><span></span><br><div id='width-validation-message'></div>
+        <label>高度：</label><input type='number' id='height' required autofocus min='0' step='0.01'/><span></span><br><div id='height-validation-message'></div>
+        <input type='submit' id='calculate' value="计算"/><br/>
+        <label>周长：</label><input type='text' id='perimeter' disabled/><br/>
+        <label>面积：</label><input type='text' id='area' disabled/>
+    </form>
+    <script ype="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src='./rectangle.js'></script>
+</body>
+</html>
